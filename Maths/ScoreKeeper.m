@@ -22,8 +22,7 @@
 
 - (void)score;
 {
-    NSLog(@"score: %li, right, %li wrong\n", (long)self.right, (long) self.wrong);
+    NSLog(@"score: %li, right, %li wrong ---%g %% \n", (long)self.right, (long) self.wrong, ((float)self.right/((float)self.right+(float)self.wrong))*100);
 }
-
 
 @end
