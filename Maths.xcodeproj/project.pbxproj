@@ -10,6 +10,7 @@
 		E1427D061E4A6E1900F30846 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1427D051E4A6E1900F30846 /* main.m */; };
 		E1427D0E1E4A766A00F30846 /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = E1427D0D1E4A766A00F30846 /* AdditionQuestion.m */; };
 		E1427D111E4A83DB00F30846 /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = E1427D101E4A83DB00F30846 /* ScoreKeeper.m */; };
+		E1427D271E4A9A8E00F30846 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E1427D261E4A9A8E00F30846 /* InputHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		E1427D0D1E4A766A00F30846 /* AdditionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
 		E1427D0F1E4A83DB00F30846 /* ScoreKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreKeeper.h; sourceTree = "<group>"; };
 		E1427D101E4A83DB00F30846 /* ScoreKeeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeper.m; sourceTree = "<group>"; };
+		E1427D251E4A9A8E00F30846 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		E1427D261E4A9A8E00F30846 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				E1427D101E4A83DB00F30846 /* ScoreKeeper.m */,
 				E1427D0C1E4A766A00F30846 /* AdditionQuestion.h */,
 				E1427D0D1E4A766A00F30846 /* AdditionQuestion.m */,
+				E1427D251E4A9A8E00F30846 /* InputHandler.h */,
+				E1427D261E4A9A8E00F30846 /* InputHandler.m */,
 			);
 			path = Maths;
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 				E1427D111E4A83DB00F30846 /* ScoreKeeper.m in Sources */,
 				E1427D061E4A6E1900F30846 /* main.m in Sources */,
 				E1427D0E1E4A766A00F30846 /* AdditionQuestion.m in Sources */,
+				E1427D271E4A9A8E00F30846 /* InputHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +264,7 @@
 				E1427D0B1E4A6E1900F30846 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
