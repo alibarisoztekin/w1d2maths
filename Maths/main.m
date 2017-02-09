@@ -7,22 +7,28 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AdditionQuestion.h"
+#import "Question.h"
 #import "Scorekeeper.h"
 #import "InputHandler.h"
+#import "QuestionManager.h"
+#import "QuestionFactory.h"
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         printf("MATHS!\n\n");
 
         ScoreKeeper* keepScore = [[ScoreKeeper alloc] init];
+        QuestionManager* questionManager = [[QuestionManager alloc] init];
+        QuestionFactory* questionFactory = [[QuestionFactory alloc] init];
         
         while(YES)
         {
-            AdditionQuestion* randomQuestion = [[AdditionQuestion alloc] init];
-
+            Question* randomQuestion = [questionFactory generateRandomQuestion];
+            
             NSString* trimmedString = [InputHandler handleInput];
             
-                                  if([trimmedString isEqualToString:@"quit"])
+            
+            if([trimmedString isEqualToString:@"quit"])
                 break;
             else if ([trimmedString isEqualToString:@"score"]){
                 [keepScore score];
@@ -38,7 +44,11 @@ int main(int argc, const char * argv[]) {
                 NSLog(@"Wrong!\n");
                 keepScore.wrong++;
             }
+            [questionManager.questions addObject:randomQuestion];
+            
+            NSLog(@"%@", [questionManager timeOutput]);
         };
+    
     }
     return 0;
 }
